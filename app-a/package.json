@@ -1,0 +1,35 @@
+{
+  "name": "tms-min-side-tjenester",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "1.0.7",
+    "rollup-plugin-import-map": "3.0.0",
+    "vite": "3.2.3",
+    "vite-plugin-css-injected-by-js": "1.4.0"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint -c .eslintrc.pre-commit.cjs --fix",
+      "prettier --cache --write",
+      "git add"
+    ],
+    "*.{css,md,html,json}": [
+      "prettier --cache --write",
+      "git add"
+    ]
+  }
+}
