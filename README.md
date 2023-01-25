@@ -10,10 +10,12 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Usage
 
-- Build each microfrontend with `$ npm run build`
-- Start each microfrontend with `$ node server.js`
-- Start the shell with `$ npm run dev`
+- Build each microfrontend with `npm run build`
+- Start each microfrontend with `node server.js`
+- Start the shell with `npm run dev`
 
 ## Shared dependencies
 
-Each app shares react dependencies through url imports that gets cached in the browser. They attempt to fetch both react and react-dom from esm.sh, thus reducing the bundle size considerably. Notice that each Astro Island can have microfrontends with differented react versions without crashing the shell app. To align the same versions, use import maps in index.astro.
+Each app shares react dependencies through url imports that gets cached in the browser. They attempt to fetch both react and react-dom from esm.sh, thus reducing the bundle size considerably.
+
+Notice that each Astro Island can have microfrontends with differented react versions without crashing the shell app. To align the same versions, use import maps in index.astro.
