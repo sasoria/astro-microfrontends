@@ -16,6 +16,6 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Shared dependencies
 
-Each app shares react dependencies through url imports that gets cached in the browser. They attempt to fetch both react and react-dom from esm.sh, thus reducing the bundle size considerably.
+Each app shares react dependencies through url imports that gets cached in the browser. They attempt to fetch both react and react-dom from [esm.sh](https://esm.sh/), thus reducing the bundle size considerably.
 
-Notice that each Astro Island can have microfrontends with differented react versions without crashing the app. To align the same versions, use import maps in index.astro.
+Notice that each Astro Island can have microfrontends with differented react versions without crashing the app. To align the same versions, use [import maps](https://github.com/sasoria/import-maps-demo) in index.astro.
