@@ -13,3 +13,9 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 - Build each microfrontend with `npm run build`
 - Start each microfrontend with `node server.js`
 - Start the shell with `npm run dev`
+
+## Shared dependencies
+
+Each app can share dependencies through url imports that gets cached in the browser. They attempt to fetch both react and react-dom from [esm.sh](https://esm.sh/), thus reducing the bundle size considerably.
+
+Due to a constraint in Astro, react and react dom cannot be shared across micro-frontends. Each app can share other dependencies through url imports that gets cached in the browser, thus reducing the bundle size considerably (see [esm.sh](https://esm.sh/)). I recomend using either importmaps in the client or ahead of time importmaps at build time to share these dependencies.
