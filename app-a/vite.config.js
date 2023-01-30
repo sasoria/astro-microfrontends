@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { rollupImportMapPlugin } from "rollup-plugin-import-map";
 import { resolve } from "path";
 
 export default ({ command }) => ({
