@@ -4,9 +4,9 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Features
 
-- Client-side composition of microfrontends
-- Isolation within Astro Islands
-- SSG/SSR supported by Astro
+- ✨ Client-side composition of microfrontends
+- 📦 Multiframeworks with Astro Islands
+- 🚀 SSG/SSR supported by Astro
 
 ## Usage
 
@@ -16,4 +16,6 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Shared dependencies
 
-Both react and react-dom are shared across microfrontends and only downloaded once on the first page load. Each app can share other dependencies either by applying import maps at build time or run time, converting bare imports to url-imports that gets cached in the browser. These are loaded from [esm.sh](https://esm.sh/) and this reduces the bundle size considerably. Due to a constraint in Astro, react and react dom cannot be shared with the shell app.
+Both react and react-dom are shared across microfrontends and only downloaded once on the first page load. Each app can share other dependencies either by applying import maps at build time or run time, converting bare imports to url-imports that gets cached in the browser.
+
+These are loaded from [esm.sh](https://esm.sh/) and this reduces the bundle size considerably. Due to a constraint in Astro, react and react dom cannot be shared with the shell app.
