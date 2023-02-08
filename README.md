@@ -16,7 +16,7 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Shared dependencies
 
-Dependencies such as react and react-dom are shared across micro-frontends and are only downloaded once on the first page load. Due to a constraint in Astro, react and react dom cannot be shared with the shell app.
+Dependencies such as react and react-dom are shared across micro-frontends. Due to a constraint in Astro, react and react dom cannot be shared with the shell app.
 
 Each app can share other dependencies through url imports that gets cached in the browser, thus reducing the bundle size (see [esm.sh](https://esm.sh/)).
 
