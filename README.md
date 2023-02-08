@@ -20,4 +20,4 @@ Dependencies such as react and react-dom are shared across micro-frontends. Due 
 
 Each app can share other dependencies through url imports that gets cached in the browser, thus reducing the bundle size (see [esm.sh](https://esm.sh/)).
 
-I recomend using either importmaps in the client or ahead of time importmaps at build time to share those dependencies.
+I recomend using either importmaps in the client or ahead of time importmaps at build time to share those dependencies, this demo uses the latter.
