@@ -25,7 +25,7 @@ import Microfrontend from "https://localhost:7100/bundle.js";
 `Microfrontend` can now be used as a regular react component:
 
 ```javascript
-<MicorFrontendA />
+const ReactComponent = () => <Microfrontend />;
 ```
 
 ## Shared dependencies
