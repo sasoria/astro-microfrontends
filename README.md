@@ -28,8 +28,8 @@ This can now be used as a regular react component:
 ```javascript
 const ReactComponent = () => (
   <>
-    <MicorFrontendA />
-    <MicorFrontendB />
+    <MicrofrontendA />
+    <MicrofrontendB />
   </>
 );
 ```
