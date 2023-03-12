@@ -19,18 +19,16 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 The shell app composes the microfrontends with url imports. This means that there is no need for frameworks or plugins in order to import microfrontends, just a single line of javascript:
 
 ```javascript
-import MicrofrontendA from "https://localhost:7100/bundle.js";
-import MicrofrontendB from "https://localhost:7200/bundle.js";
+import Microfrontend from "https://localhost:7100/bundle.js";
 ```
 
 This can now be used as a regular react component:
 
 ```javascript
 const ReactComponent = () => (
-  <>
-    <MicrofrontendA />
-    <MicrofrontendB />
-  </>
+  <section>
+    <Microfrontend />
+  </section>
 );
 ```
 
