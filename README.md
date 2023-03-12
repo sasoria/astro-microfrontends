@@ -16,6 +16,6 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Shared dependencies
 
-Dependencies such as react and react-dom are shared across applications and are fetched from [esm.sh](https://esm.sh/), reducing the bundle size. Each app can share other dependencies aswell through url imports.
+Dependencies such as react and react-dom are shared across applications. They are fetched from [esm.sh](https://esm.sh/), reducing the bundle size. Each app can share other dependencies aswell through url imports.
 
 I recomend using either importmaps in the client or ahead of time importmaps at build time to share dependencies, this demo uses the latter.
