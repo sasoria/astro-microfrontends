@@ -22,7 +22,7 @@ The shell app composes the microfrontends with url imports. This means that ther
 import Microfrontend from "https://localhost:7100/bundle.js";
 ```
 
-This can now be used as a regular react component:
+This can now be used as a regular component, in this case a react component:
 
 ```javascript
 const ReactComponent = () => (
