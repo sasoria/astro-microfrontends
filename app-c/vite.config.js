@@ -13,6 +13,7 @@ export default defineConfig({
     rollupOptions: {
       input: resolve(__dirname, "src/App.jsx"),
       preserveEntrySignatures: "exports-only",
+      external: ["solid-js"],
       output: {
         entryFileNames: "bundle.js",
         format: "esm",
