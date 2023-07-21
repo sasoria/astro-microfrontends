@@ -5,6 +5,10 @@ import { resolve } from "path";
 
 export default ({ command }) => ({
   plugins: [react(), cssInject()],
+  preview: {
+    port: 7100,
+    open: true,
+  },
   build: {
     rollupOptions: {
       input: resolve(__dirname, "src/MicroFrontend.jsx"),
