@@ -10,8 +10,21 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ## Usage
 
-- Build each microfrontend with `npm run build`
-- Start each microfrontend with `node server.js`
+### Micro frontends
+
+#### Node server
+
+- Build each micro frontend with `npm run build`
+- Navigate to server folder `cd server`
+- Start each micro frontend with `node server.js`
+
+#### Vite preview
+
+- Build each micro frontend with `npm run build`
+- Start each micro frontend with `npm run preview`
+
+### Shell
+
 - Build the shell with `npm run build`
 - Start the shell with `npm run preview`
 

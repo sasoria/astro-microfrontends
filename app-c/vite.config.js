@@ -8,6 +8,10 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  preview: {
+    port: 7300,
+    open: true,
+  },
   build: {
     target: "esnext",
     rollupOptions: {
