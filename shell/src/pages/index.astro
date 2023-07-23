@@ -1,7 +1,6 @@
 ---
 import ReactComponent from "../components/ReactComponent.jsx";
 import SolidComponent from "../components/SolidComponent.jsx";
-import "./index.css"
 ---
 
 <!DOCTYPE html>
@@ -30,3 +29,40 @@ import "./index.css"
     </main>
   </body>
 </html>
+
+<style>
+  :root {
+  --accent: 124, 58, 237;
+  --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background-color: #f6f6f6;
+}
+
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
+}
+
+main {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 60ch;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.text-gradient {
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  background-position: 0%;
+}
+</style>
