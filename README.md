@@ -12,8 +12,6 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 
 ### Micro frontends
 
-#### Vite preview
-
 - Build each micro frontend with `npm run build`
 - Start each micro frontend with `npm run preview`
 
