@@ -26,6 +26,6 @@ For production you would start the node server in the `server` folder, after bui
 
 Dependencies such as react and react-dom are shared across applications. They are fetched from [esm.sh](https://esm.sh/) and gets cached in the browser, reducing the bundle size. Each app can share other dependencies as well through url imports.
 
-## Recommendations
+## Further recommendations
 
 I've written a few recommendations and best practices. You can read them [here](/RECOMMENDATIONS.md).
