@@ -29,6 +29,8 @@ import Microfrontend from "https://microfrontend.com/bundle.js";
 </React.Suspense>;
 ```
 
+# Questions and answers
+
 ## Different React versions?
 
 It's possible to run different React versions, but keep in mind that this could
