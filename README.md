@@ -28,4 +28,4 @@ Dependencies such as react and react-dom are shared across applications. They ar
 
 ## Further recommendations
 
-I've written a few recommendations and best practices. You can read them [here](/RECOMMENDATIONS.md).
+I've written a few recommendations and best practices. You can read them [here](/RECOMMENDATIONS.md). I also have a section for [questions and answers](/QUESTIONS.md).
