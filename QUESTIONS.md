@@ -31,3 +31,9 @@ const ReactComponent = () => {
   return <div id={mountpoint} />;
 };
 ```
+
+## Is there a polyfill for importmaps?
+
+Yes, Guy Bedford has written a polyfill for importmaps. There's an article on it [here](https://guybedford.com/es-module-shims-production-import-maps).
+
+Its also possible to apply the importmap at [build time](https://github.com/sasoria/astro-importmaps-bt), not needing a polyfill at all.
