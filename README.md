@@ -33,3 +33,4 @@ I've written a few recommendations and best practices. You can read them [here](
 ## Resources
 
 - A [shoe shop](https://github.com/ayoayco/shoe-shop) example by Ayo Ayco.
+- A [presentation](https://www.youtube.com/watch?v=UQ_C79OyXI4) by Afonso Ramos.
