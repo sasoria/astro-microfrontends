@@ -4,7 +4,7 @@ const path = require("path");
 const buildPath = path.resolve(__dirname, "../dist");
 const server = express();
 
-server.use(cors({ origin: "http://localhost:3000" }));
+server.use(cors({ origin: "http://localhost:4321" }));
 
 server.use("/", express.static(buildPath));
 
