@@ -37,3 +37,35 @@ const ReactComponent = () => {
 Yes, Guy Bedford has written a polyfill for importmaps. There's an article on it [here](https://guybedford.com/es-module-shims-production-import-maps).
 
 Its also possible to apply the importmap at [build time](https://github.com/sasoria/astro-importmaps-bt), not needing a polyfill at all.
+
+## Is it possible to use this with Web Components?
+
+Yes, as long as the micro-frontend contains a default export to a Web Component.
+
+```
+class MicroFrontend extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `
+      <p>My Web Component</p>
+    `;
+  }
+}
+
+export default MicroFrontend;
+```
+
+Then it should be able to import it with the following in the Shell:
+
+```
+<script>
+  import MicroFrontend from "http://localhost:7100/bundle.js";
+  customElements.define('micro-frontend', MicroFrontend);
+</script>
+```
+
+And use it as a normal Web Component in Astro.
+
+```
+<micro-frontend />
+```
