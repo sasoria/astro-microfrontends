@@ -42,7 +42,7 @@ Its also possible to apply the importmap at [build time](https://github.com/saso
 
 Yes, as long as the micro-frontend contains a default export to a Web Component.
 
-```
+```js
 class MicroFrontend extends HTMLElement {
   constructor() {
     super();
@@ -57,15 +57,14 @@ export default MicroFrontend;
 
 Then it should be able to import it with the following in the Shell:
 
-```
+```js
 <script>
-  import MicroFrontend from "http://localhost:7100/bundle.js";
-  customElements.define('micro-frontend', MicroFrontend);
+  import MicroFrontend from "http://localhost:7100/bundle.js"; customElements.define('micro-frontend', MicroFrontend);
 </script>
 ```
 
 And use it as a normal Web Component in Astro.
 
-```
+```js
 <micro-frontend />
 ```
