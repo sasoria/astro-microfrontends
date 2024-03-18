@@ -46,9 +46,7 @@ Yes, as long as the micro-frontend contains a default export to a Web Component.
 class MicroFrontend extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `
-      <p>My Web Component</p>
-    `;
+    this.innerHTML = `<p>My Web Component</p>`;
   }
 }
 
@@ -59,7 +57,8 @@ Then it should be able to import it with the following in the Shell:
 
 ```js
 <script>
-  import MicroFrontend from "http://localhost:7100/bundle.js"; customElements.define('micro-frontend', MicroFrontend);
+  import MicroFrontend from "http://localhost:7100/bundle.js"; 
+  customElements.define('micro-frontend', MicroFrontend);
 </script>
 ```
 
