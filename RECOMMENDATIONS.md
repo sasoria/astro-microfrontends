@@ -31,6 +31,6 @@ import Microfrontend from "https://microfrontend.com/bundle.js";
 
 ## Sharing state
 
-It's possible to share state with something like [nanoevents](https://www.npmjs.com/package/nanoevents) or localstorage. The nanoevents instance has to be the same across applications, so import it from [esm.sh](https://esm.sh/).
+It's possible to share state with something like [nanoevents](https://www.npmjs.com/package/nanoevents), [postMessage](https://github.com/ayoayco/shoe-shop/blob/main/utils/orchestrator.mjs)() or [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage). The nanoevents instance has to be the same across applications, so import it from [esm.sh](https://esm.sh/).
 
 Keep in mind that sharing state is something that should be avoided as much as possible, because it introduces tighter coupling between applications.
