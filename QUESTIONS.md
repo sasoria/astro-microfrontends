@@ -53,7 +53,7 @@ class MicroFrontend extends HTMLElement {
 export default MicroFrontend;
 ```
 
-Then it should be able to import it with the following in the Shell:
+Then you should be able to import it with the following in the Shell:
 
 ```js
 <script>
