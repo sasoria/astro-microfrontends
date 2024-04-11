@@ -32,5 +32,7 @@ I've written a few recommendations and best practices. You can read them [here](
 
 ## Resources
 
+- An [article](https://medium.com/@sergio.a.soria/setting-up-micro-frontends-with-astro-and-ecma-script-modules-137340d2c520) on the implementation.
 - A [shoe shop](https://github.com/ayoayco/shoe-shop) example by Ayo Ayco.
 - A [presentation](https://www.youtube.com/watch?v=UQ_C79OyXI4) at require(lx) by Afonso Ramos.
+
