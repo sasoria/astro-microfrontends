@@ -68,5 +68,5 @@ And use it as a normal Web Component in Astro.
 <micro-frontend />
 ```
 
-## Will this work with React Server components?
+## Will it work with React Server components?
 Yes, once NextJS has better support for [url-imports](https://nextjs.org/docs/app/api-reference/next-config-js/urlImports) it should work with React Server Components.
