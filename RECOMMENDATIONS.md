@@ -2,7 +2,7 @@
 
 ## Avoid CSS overrides
 
-Use [CSS-modules](https://vitejs.dev/guide/features#css-modules) to avoid CSS overrides.
+Use [CSS-modules](https://vitejs.dev/guide/features#css-modules) to avoid CSS overrides. It's also possible to prefix css classes with [postcss-prefix-selector](https://www.npmjs.com/package/postcss-prefix-selector).
 
 ## Isolate errors
 
